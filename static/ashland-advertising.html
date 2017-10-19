@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!--STYLES-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--JAVASCRIPT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+  </head>
+  <body ng-app="angularApp" ng-controller="mainCtrl" ng-class="{'navOpen' : navToggle}">
+    <nav>
+      <div class="container">
+        <h1>Austin <a href="/index.html" ><img src="assets/images/logo.png" /></a> Thomas</h1>
+        <ul ng-class="{'navOpen' : navToggle}">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
+<div class="page gallery-page">
+  <div class="container">
+    <div class="intro">
+      <h2>Ashland Advertising</h2>
+      <p>I spent the summer of 2017 interning at Ashland Advertising in Charlotte. I learned a ton and got to try some design that was actually used in both digital and print ads. A few are featured here.</p>
+      <p>They liked me! To read my reference letter from Anna <a href="/assets/images/ashland-advertising-reference-letter.pdf" target="_blank">click here</a></p>
+    </div>
+    <div class="gallery">
+      <div class="item"><a href="charlotte-latin.html">
+          <div class="overlay"></div><img src="assets/images/logos/charlotte-latin.png"></a></div>
+      <div class="item"><a href="keffer-hyundai.html">
+          <div class="overlay"></div><img src="assets/images/logos/keffer.png"></a></div>
+      <div class="item"><a href="hyundai-of-anderson.html">
+          <div class="overlay"></div><img src="assets/images/logos/hoa.png"></a></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">  
+    <p>&copy; 2017, Austin Thomas.&nbsp;&nbsp;|&nbsp;&nbsp;Website by <a href="http://averyethomas.com">Avery Thomas</a></p>
+  </div>
+</footer>

@@ -1,0 +1,437 @@
+/*
+Theme Name: MolloyKaye
+Theme URI: molloykayeretail.com
+Author: Avery Thomas
+Author URI: averyethomas.com
+Description: Theme created by Avery Thomas for Molloy Kaye
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: INSERT TAGS HERE SEPARATED BY COMMAS
+Text Domain: themename
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+  font-size: 10px; }
+
+h1, h2, h3, h4, h5, h6, p, small {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: .5rem 0 2rem 0;
+  color: #000000; }
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem; } }
+
+h2 {
+  font-size: 2.7rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+  position: relative; }
+
+h3 {
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  padding: 5px 0;
+  margin: 0.5rem 0; }
+
+h4 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  padding: 5px 0;
+  margin: 0.5rem 0; }
+
+h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #000000;
+  margin: 0.5rem 0; }
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+  padding: 0;
+  margin: 0.5rem 0;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+  margin: 0 0 0.5rem; }
+  p b {
+    font-weight: 600; }
+
+small {
+  font-size: 0.6rem;
+  line-height: 0.9rem; }
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  a:hover {
+    text-decoration: none;
+    color: #F2EC30; }
+
+blockquote {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 0.5rem auto 2rem; }
+  blockquote cite {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    display: block; }
+
+.container {
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+nav {
+  padding: 1rem 0; }
+  nav h1 {
+    margin: 0 0 0.7rem;
+    padding: 0 0 0 1rem;
+    font-size: 1.8rem;
+    text-align: center; }
+    @media all and (min-width: 992px) {
+      nav h1 {
+        padding: 0 0 0 2.25rem;
+        font-size: 2rem; } }
+    nav h1 a {
+      line-height: normal;
+      font-size: 100%;
+      text-align: center; }
+    nav h1 img {
+      display: inline-block;
+      max-width: 40px;
+      vertical-align: middle; }
+      @media all and (min-width: 768px) {
+        nav h1 img {
+          max-width: 75px; } }
+  nav ul {
+    text-align: center;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0.15rem 0.75rem;
+        border-left: 2px solid #000000;
+        text-align: center; }
+        @media all and (min-width: 768px) {
+          nav ul li a {
+            padding: 0.25rem 0;
+            width: 150px;
+            font-size: 1rem;
+            border-left: 3px solid #000000; } }
+      nav ul li:last-of-type a {
+        border-right: 2px solid #000000; }
+        @media all and (min-width: 768px) {
+          nav ul li:last-of-type a {
+            border-right: 3px solid #000000; } }
+
+.page {
+  padding: 1rem 0; }
+  @media all and (min-width: 768px) {
+    .page {
+      padding: 3rem 0; } }
+  .page .container {
+    overflow: hidden; }
+  .page .image img {
+    display: block;
+    width: 100%;
+    margin: 0; }
+  .page .image h6 {
+    margin: 0; }
+  @media all and (min-width: 768px) {
+    .page .image {
+      width: calc(50% - 1px);
+      foat: left;
+      padding: 0 1rem; } }
+  @media all and (min-width: 768px) {
+    .page .copy {
+      width: calc(50% - 1px);
+      float: right;
+      padding: 0 1rem; } }
+  .page .copy .links ul {
+    text-align: center;
+    padding: 0; }
+    .page .copy .links ul li {
+      display: inline-block; }
+      .page .copy .links ul li a {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0.25rem 0.75rem;
+        border-left: 2px solid #000000; }
+        @media all and (min-width: 768px) {
+          .page .copy .links ul li a {
+            padding: 0.25rem 2rem;
+            font-size: 1rem;
+            border-left: 3px solid #000000; } }
+      .page .copy .links ul li:last-of-type a {
+        border-right: 2px solid #000000; }
+        @media all and (min-width: 768px) {
+          .page .copy .links ul li:last-of-type a {
+            border-right: 3px solid #000000; } }
+
+.contact .container {
+  max-width: 768px; }
+
+.contact .phone, .contact .email {
+  margin: 0 0 2.5rem;
+  text-align: center;
+  overflow: hidden; }
+  .contact .phone img, .contact .email img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1rem; }
+    @media all and (min-width: 768px) {
+      .contact .phone img, .contact .email img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 50%;
+        color: red; } }
+  @media all and (min-width: 768px) {
+    .contact .phone .text, .contact .email .text {
+      display: inline-block;
+      width: 64.5%;
+      color: red;
+      position: relative;
+      top: -30px;
+      left: -5px; } }
+  .contact .phone .text a, .contact .email .text a {
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto 0.5rem;
+    border-bottom: 2px solid #000000;
+    max-width: 300px; }
+    @media all and (min-width: 768px) {
+      .contact .phone .text a, .contact .email .text a {
+        width: 100%;
+        max-width: none;
+        font-size: 1.4rem; } }
+  .contact .phone .text small, .contact .email .text small {
+    display: block; }
+
+@media all and (min-width: 768px) {
+  .contact .phone img {
+    float: right; } }
+
+.contact .phone .text {
+  top: 32px;
+  right: -8px;
+  left: auto; }
+
+.gallery-page .intro {
+  margin: 0 0 2rem;
+  padding: 0 1rem; }
+  .gallery-page .intro a {
+    font-size: 1rem;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding: 0 10px;
+    margin: 0 10px; }
+
+@media all and (min-width: 768px) {
+  .gallery-page .gallery {
+    -webkit-column-count: 2;
+            column-count: 2; } }
+
+.gallery-page .gallery.snapchat {
+  padding: 1rem;
+  -webkit-column-count: 2;
+          column-count: 2; }
+  @media all and (min-width: 768px) {
+    .gallery-page .gallery.snapchat {
+      -webkit-column-count: 4;
+              column-count: 4; } }
+  .gallery-page .gallery.snapchat .item {
+    background: #dedede;
+    border: 1px solid #000000;
+    padding: 0;
+    border-radius: 7px; }
+
+.gallery-page .gallery .item {
+  padding: 1rem;
+  margin: 0 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid; }
+  .gallery-page .gallery .item img {
+    display: block;
+    width: 100%; }
+  .gallery-page .gallery .item a {
+    display: block;
+    position: relative;
+    padding: 1rem; }
+    .gallery-page .gallery .item a.snapchat {
+      background: rgba(242, 236, 48, 0.75); }
+    .gallery-page .gallery .item a:hover .overlay {
+      opacity: 1; }
+    .gallery-page .gallery .item a .overlay {
+      opacity: 0;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      background: rgba(242, 236, 48, 0.75);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    .gallery-page .gallery .item a h3 {
+      text-align: center;
+      font-size: 5rem;
+      text-shadow: 3px 3px #ffffff, 5px 5px #cecece;
+      font-weight: 700; }
+    .gallery-page .gallery .item a h4 {
+      text-align: center;
+      margin: 0;
+      line-height: 2rem;
+      text-transform: uppercase; }
+    .gallery-page .gallery .item a h6 {
+      text-align: center;
+      font-weight: 300;
+      margin: 0; }
+
+.gallery-page .gallery.float {
+  text-align: center; }
+  @media all and (min-width: 768px) {
+    .gallery-page .gallery.float {
+      -webkit-column-count: 1;
+              column-count: 1; } }
+  @media all and (min-width: 768px) {
+    .gallery-page .gallery.float .item {
+      width: calc(50% - 10px);
+      display: inline-block;
+      vertical-align: middle; } }
+
+.home img {
+  display: block;
+  width: 75%;
+  margin: 0 auto; }
+
+.home .carousel {
+  margin: 1rem;
+  position: relative; }
+  .home .carousel img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+    .home .carousel img.active {
+      opacity: 1; }
+
+footer {
+  text-align: center; }
+  footer p {
+    font-size: 0.7rem; }
+    footer p a {
+      font-size: 0.7rem; }
