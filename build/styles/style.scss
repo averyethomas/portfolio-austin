@@ -201,6 +201,10 @@ nav{
     margin: 0 0 2rem;
     padding: 0 1rem;
     
+    h1{
+      text-align: left;
+    }
+    
     a{
       font-size: 1rem;
       border-left: 2px solid $black;

@@ -11,6 +11,18 @@
 
 <div class="page gallery-page">
     <div class="container">
+        <?php $intro = get_field('intro', $this_category);
+        
+        if (isset($intro)):
+        
+        ?>
+        
+        <div class="intro">
+            <h1><?php echo $this_category->name; ?></h1>
+            <?php echo $intro;  ?>
+        </div>
+    
+        <?php endif; ?>
         <div class="gallery float">
         <?php if ( get_category_children( $this_category->cat_ID ) != "" ) {
             
@@ -24,7 +36,7 @@
             $photo = get_field('image', $category); ?>
             
             <div class="item">
-                <a href="<?php echo get_category_link( $category->term_id ); ?>">
+                <a href="/<?php echo $category->slug; ?>">
                     <div class="overlay"></div>
                     <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt'] ?>" />
                 </a>
