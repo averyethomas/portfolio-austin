@@ -212,6 +212,14 @@ nav{
       padding: 0 10px;
       margin: 0 10px;
     }
+    
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    iframe{
+      max-width: 100%;
+    }
   }
   
   .gallery{
