@@ -418,16 +418,16 @@ nav {
       display: inline-block;
       vertical-align: middle; } }
 
+@media all and (min-width: 650px) {
+  .home .gallery {
+    -webkit-column-count: 2;
+            column-count: 2; } }
+
 .home .gallery .item {
   padding: 1rem;
-  position: relative; }
-  @media all and (min-width: 768px) {
-    .home .gallery .item {
-      width: 39.3%;
-      float: left; }
-      .home .gallery .item:nth-of-type(2) {
-        width: 60.7%;
-        float: right; } }
+  position: relative;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid; }
   .home .gallery .item a {
     display: block; }
     .home .gallery .item a img {

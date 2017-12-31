@@ -324,19 +324,15 @@ nav{
 .home{
   
   .gallery{
+    
+    @media all and (min-width: 650px){
+      column-count: 2;
+    }
+    
     .item{
       padding: 1rem;
       position: relative;
-      
-      @media all and (min-width: 768px){
-        width: 39.3%;
-        float: left;
-        
-        &:nth-of-type(2){
-          width: 60.7%;
-          float: right;
-        }
-      }
+      break-inside: avoid;
       
       a{
         display: block;

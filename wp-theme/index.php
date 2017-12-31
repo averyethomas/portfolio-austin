@@ -8,6 +8,15 @@
 <div class="page home">
     <div class="container">
         <div class="gallery">
+        <?php   $cat = get_category_by_slug('campaigns');
+                $photo = get_field('image', $cat);
+        ?>
+        <div class="item">
+            <a href="/<?php echo $cat->slug; ?>">
+                <div class="overlay"></div>
+                <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt'] ?>" />
+            </a>
+        </div>    
         
         <?php $objects = get_field('featured_posts');
             
